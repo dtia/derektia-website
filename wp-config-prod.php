@@ -3,9 +3,9 @@
  * The base configurations of the WordPress.
  *
  * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, and ABSPATH. You can find more information by visiting
- * {@link https://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php}
- * Codex page. You can get the MySQL settings from your web host.
+ * Secret Keys, WordPress Language, and ABSPATH. You can find more information
+ * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
+ * wp-config.php} Codex page. You can get the MySQL settings from your web host.
  *
  * This file is used by the wp-config.php creation script during the
  * installation. You don't have to use the web site, you can just copy this file
@@ -16,19 +16,19 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'localsite');
+define('DB_NAME', 'derektia_com_1');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'derektiacom1');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '2Tk2jyCr');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql.derektia.com');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
+define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '==ZC@]0-R`npTf@;1?LTUNfW?7|arfr>l@QLjvb^Ow_G}nfnHm:/FgdoqmptHFBy');
-define('SECURE_AUTH_KEY',  'abfo1xcU|YF#g||-|-XdyZL)q:*gH85QdMt-g+]fGW_P&mVP+/yM--!d]`&j0M+W');
-define('LOGGED_IN_KEY',    'd^[-,%SF@`[yg`hCyxd7y1&&YlEv|N bBef?R|fGrDDPDeyx+sQI*lme)<t.,0w:');
-define('NONCE_KEY',        'tMeb`)aKq4Iq_M+g3(v#=jgMF[><iYt2|hGg,u5V,-y++7m%k*~h.L-QrSr7Av~I');
-define('AUTH_SALT',        'Zmqz<%7obRswa]a0tR;cvrGW~Rhs]/H^7D3fML$4m9 W*dOBGhM9-]!a6C6RhJKo');
-define('SECURE_AUTH_SALT', '` BGx.&M3gy4FKCV!CuSm6-b/6Q#lts|+k4r{9[JgKtpknY+C_j7.K+>d%Lz{6DX');
-define('LOGGED_IN_SALT',   'knuI!c`|3<.%TN+:$0hUD ;KM?&|zleV(fEQt}=ASC#-F}#%+<M]~9t1g9~Ru{rB');
-define('NONCE_SALT',       'cK[5$89=?(T-]mK[bJ--~x>#rX5`m*|o:}C$2|CC>+s~C>M7uTx$en<S}p||c7oY');
+define('AUTH_KEY',         '#~5+@?@"_p4|L"_W`@_|o"R(M$mCf1xDaWzEBZ/KuP164|J%"/rCWHgGkpF#Mbkz');
+define('SECURE_AUTH_KEY',  'z%H`k5bX:no$GCLrR`s^vDp2tIk6V?ie)~hTk5asVE#lD"qTGY&1|YaYl@cgr/4X');
+define('LOGGED_IN_KEY',    'eTGjqjhIV):XMPiD|xSL0%3s`bL)M^W6+j0BochEe`pljb:Mkw4S^N)mE/t4zG0x');
+define('NONCE_KEY',        'I69D(ezT9iykK5Tf;z:ic_aW?FgV+FW2FXd)xd~X39r2cK(Wqtw&5Y7BH9&@M4TL');
+define('AUTH_SALT',        'Ij"PcJr@v5YJQny+~aP)&TZS"Im@1u8_"8NJ~KgaZDjQOh"(tVYzz;Y^%i*pTE|8');
+define('SECURE_AUTH_SALT', 'FY$GlwdgoWs6!q*(Df(ff2GLysG9xwyRu5|!uYHL1eq/bJZQS0+Cs7`V|Yx94$FC');
+define('LOGGED_IN_SALT',   '7!8NH(vAJ|#w)1_Le|B_S5hGS)q2/W*a9uqVj3*$+Ck4uq^"^IE*oY&40W68m^g"');
+define('NONCE_SALT',       'xcBUYv|EIJApElupWi?xcQOqO3Bg|XteTyL:t|q~ZzWBQUU3~TGvi/$"@vIxGET%');
 
 /**#@-*/
 
@@ -59,7 +59,23 @@ define('NONCE_SALT',       'cK[5$89=?(T-]mK[bJ--~x>#rX5`m*|o:}C$2|CC>+s~C>M7uTx$
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'wp_2kpqh9_';
+
+/**
+ * Limits total Post Revisions saved per Post/Page.
+ * Change or comment this line out if you would like to increase or remove the limit.
+ */
+define('WP_POST_REVISIONS',  10);
+
+/**
+ * WordPress Localized Language, defaults to English.
+ *
+ * Change this to localize WordPress. A corresponding MO file for the chosen
+ * language must be installed to wp-content/languages. For example, install
+ * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
+ * language support.
+ */
+define('WPLANG', '');
 
 /**
  * For developers: WordPress debugging mode.
@@ -78,3 +94,4 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
